@@ -1,7 +1,7 @@
 import throttle from 'lodash.throttle';
 const formInput = document.querySelector('.feedback-form');
 const LOCAL_STORAGE_KEY = 'feedback-form-state';
-formData = {};
+const formData = {};
 initPage();
 
 const throttledOnFormInput = throttle(onFormInput, 500);
