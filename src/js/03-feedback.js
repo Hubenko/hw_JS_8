@@ -44,6 +44,9 @@ const handleSubmit = event => {
   const {
     elements: { email, message },
   } = event.currentTarget;
+  if (email.value === '' || message.value === '') {
+    return alert('Введите значение');
+  }
 
   console.log({ email: email.value, message: message.value });
   event.currentTarget.reset();
